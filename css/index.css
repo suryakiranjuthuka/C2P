@@ -1,0 +1,423 @@
+/*hero-section*/
+#hero-section .hero-bg {
+		background-image: url(../images/landing_image.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top left;
+		/* height: 100vh; */
+		height: 550px;
+		position:relative;
+		display: flex;
+		align-items: center;
+		/* justify-content: left; */
+}
+
+#hero-section #c2pBannerContainer {
+	max-width: 1200px;
+	min-width: 1200px;
+	margin: 0 auto;
+}
+
+#hero-section .c2p {
+		width: 600px;
+		/* background-color: #9d0b0e; */
+		background-color: rgba(157,11,14,.9);
+		color: #fff;
+		padding: 25px 30px;
+		padding-bottom: 70px;
+		border-radius: 5px;
+		position: relative;
+		/* margin-left: auto; */
+		display: block;
+		top: 90px;
+		/* left: 890px; */
+}
+
+.c2p h1{
+	font-size: 34px;
+	font-weight: 300;
+	margin-bottom: 12px;
+	letter-spacing: .2px;
+	color: rgba(255,255,255,.87);
+}
+
+.c2p p{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.4;
+	letter-spacing: .2px;
+	color: rgba(255,255,255,.78);
+}
+
+#hero-section .btn_know {
+ background-color: rgba(255,255,255,.25);
+ text-align: center;
+ padding: 10px 20px;
+ margin-top: 10px;
+ cursor: pointer;
+ border-radius: 2px;
+ font-size: 15px;
+ float: right;
+ color: rgba(255,255,255,.78);
+ text-decoration: none;
+ font-weight: 500;
+ border: 2px solid rgba(255,255,255,.3);
+}
+
+#hero-section .btn_know:hover {
+		color: #fff;
+}
+
+/*END OF hero-section*/
+
+/*who we are*/
+
+#who-section,
+#our-section,
+#client-section,
+#products-section,
+#product-section {
+		text-align: center;
+		padding: 30px 0%;
+}
+
+#client-section{
+	padding-top: 20px;
+}
+
+#client-section .sectionTitleContainer{
+	padding-bottom: 0px;
+}
+
+#who-section .who-we .whoWeImgContainer {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-evenly;
+	max-width: 930px;
+	margin: 0 auto;
+}
+
+#who-section .whoWeImgContainer .whoWeImg img{
+	height: 300px;
+  border-radius: 4px;
+  border: 4px solid white;
+}
+
+#who-section .whoWeImgContainer .whoWeImg{
+}
+
+#who-section .whoWeImgContainer .whoWeImgContent{
+	width: 400px;
+	color: rgba(0,0,0,.78);
+	line-height: 1.4;
+}
+
+.whoWeImgContent{
+	font-size: 16px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+/*END of who we are*/
+
+/*our services*/
+/* #our-section */
+#our-section{
+	background-color: #f7f7f7;
+	margin-top: 40px;
+	padding-bottom: 40px;
+}
+
+#ourServicesGridContainer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
+	margin: 16px auto;
+}
+
+#ourServicesGridContainer .gridBox{
+	width: 330px;
+	height: 270px;
+  background-color: #c62828;
+	background-color: #9d0b0e;
+	background-color: #1565c0;
+	position: relative;
+}
+
+.gridBox.border{
+	border-top: 6px solid #1565c0;
+	/* border-top: 6px solid #9d0b0e; */
+}
+
+.gridBox .gridBoxOverlay{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	transform: translateY(0px);
+	transition: all .2s ease;
+	z-index: 1;
+}
+
+.gridBox img{
+	position: absolute;
+  top: 0;
+  left: 0;
+  height: 270px;
+}
+
+.gridBox .transparentOverlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.47);
+	transition: background-color .2s;
+}
+
+.gridBox h4{
+	position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 10px;
+  color: rgba(255,255,255,.78);
+  letter-spacing: .2px;
+  font-size: 16px;
+}
+
+.gridBox h3{
+	position: absolute;
+	color: #e6e6e6;
+	text-align: center;
+	text-shadow: 1px 2px 2px #000;
+	font-size: 22px;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	width: 100%;
+	padding: 0 30px;
+  top: 50%;
+  left: 50%;
+	opacity: 1;
+  transform: translateX(-50%) translateY(-50%);
+	transition: all .2s ease-in-out;
+}
+
+.gridBox p{
+	position: absolute;
+	opacity: 0;
+	transition: all .2s;
+	color: rgba(255,255,255,.78);
+	padding: 0 30px;
+	font-size: 16px;
+	text-shadow: 1px 1px 1px #000;
+	line-height: 1.4;
+	text-align: left;
+	/* text-align: justify;
+	text-justify: inter-word; */
+	width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(0%);
+	transition: all .2s ease-in-out;
+}
+
+.gridBox:hover .transparentOverlay{
+	background-color: rgba(0,0,0,.75);
+}
+
+.gridBox:hover .gridBoxOverlay{
+	transform: translateY(-40px);
+}
+
+.gridBox:hover .gridBoxOverlay h3 {
+	opacity: 0;
+	transform: translateX(-50%) translateY(-150%);
+}
+
+.gridBox:hover .gridBoxOverlay p {
+	opacity: 1;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+
+/*ENF OF our services*/
+
+/*our client*/
+#client-section {
+		border-bottom: 1px solid lightgrey;
+}
+
+#clientsContainerWrapper {
+	max-width: 1200px;
+	margin: 0 auto 0px;
+}
+
+#clientsContainer {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+#clientsContainer > div img{
+	width: 200px;
+}
+
+/*END OF our client*/
+
+/*c2p product*/
+
+#product-section h1{
+	font-size: 36px;
+	font-weight: 300;
+	/* color: rgba(255,255,255,.78); */
+}
+
+#product-section p{
+	font-size: 16px;
+	color: rgba(255,255,255,.85);
+}
+
+#product-section a{
+	display: inline-block;
+	/* flex: 1 0 0%; */
+	background-color: rgba(0,0,0,.3);
+	background-color: rgba(255,255,255,.1);
+	text-align: center;
+	padding: 15px 25px;
+	cursor: pointer;
+	font-size: 15px;
+	border-radius: 2px;
+	color: rgba(255,255,255,.85);
+	text-decoration: none !important
+}
+
+#product-section .product-bg {
+		background-image: url(../images/concept2product.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		color: #fff;
+
+}
+
+#product-section .product-bg > div {
+		padding: 70px 90px;
+}
+
+#product-section .product-bg > div p {
+		padding: 3% 0%;
+}
+
+#product-section .product-bg .btn_talk {
+		border: 1px solid #fff;
+		margin-left: 2%;
+}
+
+#product-section .product-bg .btn_talk:hover {
+		color: #fff;
+}
+
+/*END OF c2p product*/
+
+/*case studies*/
+#caseStudiesSection {
+	margin-top: 60px;
+}
+#caseStudiesSection .caseStudiesContainer{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 1000px;
+	margin: 0px auto 40px;
+}
+
+#caseStudiesSection .eachCaseStudy{
+	max-width: 400px;
+	background-color: rgba(157,11,14,.9);
+	color: rgba(255,255,255,.78);
+	border-top: 4px solid #ddd;
+	padding: 30px 40px;
+	border-radius: 4px;
+}
+
+#caseStudiesSection .eachCaseStudy h3{
+	font-size: 26px;
+	font-weight: 300;
+	text-align: left;
+	border-bottom: 1px solid rgba(0,0,0,.25);
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+
+#caseStudiesSection .eachCaseStudy p{
+	font-size: 16px;
+  display: block;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.5;
+}
+
+#caseStudiesSection .eachCaseStudy a{
+	border: 2px solid rgba(255,255,255,.47);
+}
+
+#caseStudiesSection .eachCaseStudy a:hover{
+	border-color: #135db1;
+	color: rgba(255,255,255,.9);
+}
+
+
+
+
+/*Request a quote styles*/
+#rAQ {
+		background-color: #f7f7f7;;
+		color: rgba(0,0,0,.78);
+		padding: 40px 0;
+		text-align: center;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+}
+
+#rAQ h5{
+	font-size: 30px;
+	font-weight: 300;
+}
+
+#rAQ a{
+	margin-top: 0px;
+	margin-left: 30px;
+	font-size: 16px;
+	padding: 15px 20px;
+	background-color: white;
+	color: #1565c0;
+	text-transform: uppercase;
+}
+
+/* #footer .F-M-P-Dv{
+	background-color: rgba(255,255,255,.7);
+} */
+
+/*Request a quote styles end*/
+
+@media (min-width: 320px) and (max-width:766px) {
+		#hero-section .hero-bg {
+				background-position: left;
+		}
+		#hero-section .c2p {
+				width: 100%;
+				transform: translate(0%, 0%);
+		}
+		#our-section .our-services .our-services-gird,
+		#case-section .case_box_wapper {
+				display: initial;
+		}
+
+}
+
+@media (min-width:768px) and (max-width:1023px) {}
+
+/*END OF case studies*/

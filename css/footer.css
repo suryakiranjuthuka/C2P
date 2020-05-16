@@ -1,0 +1,106 @@
+#Footer {
+    background-color: #363636;
+    color: white;
+    text-transform: uppercase;
+}
+
+.F-M-P-Dv {
+    background-color: rgba(255,255,255,.7);
+    position: absolute;
+    width: 100%;
+    top: -15vh;
+    padding: 7vh 4vh;
+    padding-top: 15vh;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    color: rgba(0,0,0,.78);
+    font-size: 30px;
+    /* font-weight: 300; */
+}
+
+#Footer ul {
+    padding: 0px;
+    margin: 0;
+    line-height: 2.5;
+}
+
+#Footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#Footer ul li {
+    list-style: none;
+    font-size: 16px;
+}
+
+.F-Main,
+.F-M-Social {
+    padding: 0px;
+}
+
+#Footer2 {
+    background-color: #3d3d3d;
+    color: #939393;
+    padding: 4vh 0px;
+}
+
+#Footer2 p {
+    font-size: 14px;
+}
+
+.F2-M-R p {
+    text-align: right;
+}
+
+.F-M-R div p {
+    text-transform: none;
+}
+
+.F-Main {
+    padding: 7vh 0;
+}
+
+.F-M-L {
+    padding-left: 8vh;
+    border-right: 1px solid #545454;
+}
+
+.F-M-C {
+    padding-left: 9vh;
+    border-right: 1px solid #545454;
+}
+
+.F-M-L .div1 {
+    margin-bottom: 8vh;
+}
+
+.F-M-C .div1 {
+    margin-bottom: 8vh;
+}
+
+.F-M-R {
+    padding: 0 9vh;
+}
+
+.F-M-R .div1 {
+    margin-bottom: 8vh;
+}
+
+.F-M-P-Dv ul {}
+
+.F-M-P-Dv ul li a {
+    text-transform: capitalize;
+    padding: 3vh 0;
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    color: #1565c0 !important;
+}
+
+
+@media (min-width: 320px) and (max-width:766px) {
+    .F-M-P-Dv {
+        position: inherit;
+        top: inherit;
+    }
+}

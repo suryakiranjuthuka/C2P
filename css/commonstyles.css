@@ -1,0 +1,334 @@
+/* Colors */
+/*
+Primary: #1565c0
+P-Light: #5e92f3
+P-Dark: #003c8f
+Secondary: #c62828
+S-Light: #ff5f52
+S-Dark: #9d0b0e rgb(157,11,14)
+-------S-Dark: #8e0000------
+*/
+
+
+/* CSS reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Shadows */
+
+.card {
+    display: inline-block;
+    position: relative;
+}
+
+.card-0 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card-1 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card-1:hover {
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card-3 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card-4 {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-5 {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.boxShadow {
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, .5);
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    background-color: white;
+    line-height: 1;
+}
+
+* {
+    padding: 0;
+}
+
+h1 {
+    font-size: 26px;
+
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 0;
+
+}
+
+h3 {
+    font-size: 20px;
+    /* padding: 1%; */
+
+}
+
+h4 {
+    font-size: 18px;
+    /* line-height: 1.4;
+    letter-spacing: 1px; */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: .2px;
+
+}
+
+.under_line {
+    border: 2px solid #9d0b0e;
+    width: 120px;
+    display: block;
+    margin: 20px auto;
+}
+
+.common_btn {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 0;
+    transition: all .2s;
+}
+
+.btn {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.common_btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    transition: all .2s;
+}
+
+.button{
+  display: inline-block;
+  background-color: rgba(0,0,0,.3);
+  background-color: rgba(255,255,255,.1);
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 2px;
+  margin-top: 15px;
+  float: right;
+  background-color: #1565c0;
+  text-decoration: none !important;
+  color: rgba(255,255,255,.78);
+  transition: all .2s;
+}
+
+.button:hover{
+  color: rgba(255,255,255,.9);
+  background-color: #135db1;
+}
+
+.display_center {
+    display: grid;
+    place-content: center;
+}
+
+.sectionTitleContainer{
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.sectionTitles{
+  display: block;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.sectionTitles h3{
+  font-size: 36px;
+  font-weight: 300;
+  /* font-weight: 400; */
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  color: rgba(0,0,0,.78);
+  border-right: 3px solid #9d0b0e;
+  padding: 8px 22px 8px 0;
+  margin-right: 22px;
+}
+
+.sectionTitles h4{
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 300;
+  /* color: #1565c0; */
+  color: rgba(0,0,0,.78);
+}
+
+.sectionTitleContainer p{
+  font-size: 16px;
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
